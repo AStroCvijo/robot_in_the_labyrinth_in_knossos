@@ -10,14 +10,12 @@ Date of creation: December, 2024
     git clone https://github.com/AStroCvijo/robot_in_the_labyrinth_in_knossos.git
     ```
 
-2. Navigate to the project directory:
+2. Build the App
+
+3. Navigate to .exe file
     ```bash
-    cd robot_in_the_labyrinth_in_knossos
+    cd robot_in_the_labyrinth_in_knossos\x64\Debug
     ```
-
-3. Build the App
-
-4. Navigate to .exe file
 
 5. Run the App:
     ```bash
