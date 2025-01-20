@@ -3,9 +3,9 @@
 #include <vector>
 #include <queue>
 #include <string>
-#include "constants.h"
-#include "robot.h"
-#include "minotaur.h"
+#include "../constants.h"
+#include "../Robot/robot.h"
+#include "../Minotaur/minotaur.h"
 
 class Labyrinth {
 private:

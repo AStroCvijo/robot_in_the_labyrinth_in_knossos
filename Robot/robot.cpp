@@ -1,6 +1,6 @@
 #include "Robot.h"
-#include "Labyrinth.h"
-#include "constants.h"
+#include "../Labyrinth/Labyrinth.h"
+#include "../constants.h"
 
 // Konstuktor
 Robot::Robot() {

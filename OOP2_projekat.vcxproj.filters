@@ -18,19 +18,16 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameIntro.cpp">
+    <ClCompile Include="GameIntro\GameIntro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Labyrinth.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Labyrinth.cpp">
+    <ClCompile Include="Labyrinth\Labyrinth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="robot.cpp">
+    <ClCompile Include="Minotaur\minotaur.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="minotaur.cpp">
+    <ClCompile Include="Robot\robot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +35,16 @@
     <ClInclude Include="constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameIntro.h">
+    <ClInclude Include="GameIntro\GameIntro.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="robot.h">
+    <ClInclude Include="Labyrinth\Labyrinth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minotaur.h">
+    <ClInclude Include="Minotaur\minotaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Robot\robot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

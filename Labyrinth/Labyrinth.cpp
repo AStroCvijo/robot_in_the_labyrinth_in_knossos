@@ -1,11 +1,11 @@
 #include "Labyrinth.h"
-#include "constants.h"
+#include "../constants.h"
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
 #include <ctime>
-#include "robot.h"
-#include "minotaur.h"
+#include "../Robot/robot.h"
+#include "../Minotaur/minotaur.h"
 
 using namespace std;
 

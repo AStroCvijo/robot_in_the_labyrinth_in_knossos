@@ -1,5 +1,5 @@
 #include "minotaur.h"
-#include "constants.h"
+#include "../constants.h"
 
 // Konstruktor
 Minotaur::Minotaur() {

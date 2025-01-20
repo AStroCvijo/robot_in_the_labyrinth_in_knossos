@@ -7,8 +7,8 @@
 #include <conio.h>
 #include <fstream>
 #include "constants.h"
-#include "GameIntro.h"
-#include "Labyrinth.h"
+#include "GameIntro/GameIntro.h"
+#include "Labyrinth/Labyrinth.h"
 
 using namespace std;
 

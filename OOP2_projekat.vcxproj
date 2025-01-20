@@ -127,18 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameIntro.cpp" />
-    <ClCompile Include="Labyrinth.cpp" />
-    <ClCompile Include="Labyrinth.h" />
+    <ClCompile Include="GameIntro\GameIntro.cpp" />
+    <ClCompile Include="Labyrinth\Labyrinth.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="minotaur.cpp" />
-    <ClCompile Include="robot.cpp" />
+    <ClCompile Include="Minotaur\minotaur.cpp" />
+    <ClCompile Include="Robot\robot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h" />
-    <ClInclude Include="GameIntro.h" />
-    <ClInclude Include="minotaur.h" />
-    <ClInclude Include="robot.h" />
+    <ClInclude Include="GameIntro\GameIntro.h" />
+    <ClInclude Include="Labyrinth\Labyrinth.h" />
+    <ClInclude Include="Minotaur\minotaur.h" />
+    <ClInclude Include="Robot\robot.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
