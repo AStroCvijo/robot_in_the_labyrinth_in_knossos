@@ -23,8 +23,8 @@ Date of creation: December, 2024
     ```
     
 ## Arguments Guide
-args1 - number of rows in the labyrinth
+Height - number of rows in the labyrinth
 
-args2 - number of columns in the labyrinth
+Width - number of columns in the labyrinth
 
-args2 - number of items in the labyrinth
+Number of items - number of items in the labyrinth
