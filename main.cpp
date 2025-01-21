@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
     // Provjera broja argumenata komandne linije
     if (argc != 4) {
-        cout << "Pogresan broj argumenata! Ocekivana su 3 argumenta: rows, cols, numItems." << endl;
+        std::cout << "Pogresan broj argumenata! Ocekivana su 3 argumenta: rows, cols, numItems." << endl;
         return 1;
     }
 
@@ -26,7 +26,19 @@ int main(int argc, char* argv[]) {
 
     // Provjera da li su dimenzije lavirinta ispravne
     if (rows <= 15 || cols <= 15 || numItems <= 3) {
-        cout << "Dimenzije lavirinta moraju biti vece od 15x15, a broj predmeta veci od 3." << endl;
+        std::cout << "Dimenzije lavirinta moraju biti vece od 15x15, a broj predmeta veci od 3." << endl;
+        return 1;
+    }
+
+    // Projera da li predmeti mogu da stanu u lavirint zadatih dimenzija
+    if (numItems > (rows - 2) * (cols - 2) - (2 * (rows + cols))) {
+        std::cout << "Odabrani broj predeta ne moze da stane u lavirint." << endl;
+        return 1;
+    }
+
+    // Projera da li su dimenzije matrica prevelike
+    if (rows > 100 || cols > 100) {
+        std::cout << "Dimenzije matrice su prevelike." << endl;
         return 1;
     }
 
@@ -44,7 +56,7 @@ int main(int argc, char* argv[]) {
         if (labyrinth.endCondition()) {
             system("CLS");
             labyrinth.printLabyrinth();
-            cout << "Pronasli ste izlaz iz lavirinta!!!\nHvala sto ste igrali!" << endl;
+            std::cout << "Pronasli ste izlaz iz lavirinta!!!\nHvala sto ste igrali!" << endl;
 
             // Cuvanje rezultata igre
             labyrinth.saveGameOutcome("Robot je pronasao izlaz!");
@@ -59,7 +71,7 @@ int main(int argc, char* argv[]) {
 
         // Provjera da li je robot ziv
         if (labyrinth.isDead()) {
-            cout << "\nMinotaur je unistio robota. Izgubili ste!\n";
+            std::cout << "\nMinotaur je unistio robota. Izgubili ste!\n";
 
             /// Cuvanje rezultata igre
             labyrinth.saveGameOutcome("Minotaur je unistio robota.");
@@ -67,10 +79,10 @@ int main(int argc, char* argv[]) {
             return 0;
         }
 
-        cout << komande;
+        std::cout << komande;
 
         // Unos komande koristeći getche()
-        cout << "Unesite komandu: ";
+        std::cout << "Unesite komandu: ";
         char command = _getche();
 
         switch (tolower(command)) {
@@ -95,7 +107,7 @@ int main(int argc, char* argv[]) {
             continue;
 
         case 'q': // Izlaz
-            cout << "\nIzlaz iz igre. Hvala sto ste igrali!" << endl;
+            std::cout << "\nIzlaz iz igre. Hvala sto ste igrali!" << endl;
 
             // Cuvanje rezultata igre
             labyrinth.saveGameOutcome("Igrac je napustio igru.");
